@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/******************************************NAVBAR ****************************************************************/
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 10px 20px;
+    
+    
+}
+
+.left_nav,
+.right_nav {
+    display: flex;
+    align-items: center; 
+}
+
+.left_nav ul,
+.right_nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.left_nav ul a,
+.right_nav ul a {
+    text-decoration: none;
+    color: #5f6368;
+    margin: 0 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center; 
+    
+}
+
+#lettre_profile{
+    text-decoration: none;
+}
+
+.left_nav ul a:hover,
+.right_nav ul a:hover {
+    text-decoration: underline;
+}
+
+svg {
+    cursor: pointer;
+}
+
+.button_profile {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+
+
+
+/***************************** CONTENT &  SEARCH *******************************/
+
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    padding: 20px;
+}
+
+
+.Title img {
+    width: 272px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    padding: 10px 15px;
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input svg {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.input input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 8px;
+    color: #202124;
+}
+
+
+
+
+
+
+/****************************************FAV BAR ET ICONS ***********************************************/
+
+.favbar_icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+.fav_icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.fav_link {
+    text-decoration: none;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+
+.fav_button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: #f1f3f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.fav_button:hover {
+    background-color: #e8e8e8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+.fav_button svg {
+    width: 24px;
+    height: 24px;
+}
+
+
+.fav_text {
+    font-size: 15px;
+    color: #5f6368;
+    margin: 0;
+    text-align: center;
+}
+
+
+
+/******************************************** Sticky Button personalisé chrome*********************************/ 
+
+
+.sticky_button {
+    position: absolute;
+    bottom: 30px;
+    right: 35px;
+    
+
+}
+
+.custom_link{
+    text-decoration: none;
+}
+
+.custom_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+   
+}
+
+.custom_button svg {
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.custom_text {
+    color: #5f6368;
+}
